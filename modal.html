@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+		
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            width: 100vw;
+            height: 100vh;
+            background: url("DSC_0005.jpg");
+            background-size: 100% 100%;
+        }
+		.modal {
+			width: 800px;
+			height: 400px;
+			position: absolute;
+			background: grey;
+			top: 50%;
+			left: 50%;
+			margin-left: -400px;
+			margin-top: -200px;
+		}
+		@media screen and (max-width: 800px) {
+			.wrapper {
+				width: 800px;
+			}
+			.modal {
+				left: 0;
+				margin-left: 0;
+			}
+		}
+		@media screen and (max-height: 400px) {
+			.wrapper {
+				height: 400px;
+			}
+			.modal {
+				top: 0;
+				margin-top: 0;
+			}
+		}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="modal">
+
+        </div>
+    </div>
+</body>
+</html>
